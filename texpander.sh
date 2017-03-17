@@ -35,7 +35,7 @@ then
     clipboard=$(xclip -selection clipboard -o)
     xclip -selection c -i "$path"
 
-    if [[ $proc_name =~ (terminal|terminator|termin) ]]
+    if [[ $proc_name =~ (terminal|terminator|termin|nano) ]]
     then
       xdotool key ctrl+shift+v
     else
